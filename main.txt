@@ -1,0 +1,37 @@
+**Aprendizaje Basado en Problemas (ABP)**
+
+### Fase 1: Diseña un ABP Personalizado
+
+Usa ChatGPT para diseñar un problema educativo basado en una de las 10 tareas propuestas. Sigue estos pasos:
+
+1. Elige una Tarea: opcion 5. Generación de Estudios de Caso
+    
+2. Define el Contexto y los Objetivos:
+    
+- Contexto: En los mercados económicos (emergentes y persistentes) se observa un entorno que admite competencia, cooperación  y coexistencia entre las entidades que poseen, distribuyen, usan y administran recursos, donde la consolidación y el control del mercado son posibles objetivos estratégicos semejantes a aquellos de una especia intentando ejercer supremacía sobre un area dada, empujando ciertas especies laterales fuera de la region. Existen datos financieros y de comportamiento del consumidor disponibles, que requieren análisis detallado para localizar mercados no explotados aun y su susceptibilidad a practicas monopólicas.  
+    
+- Objetivo: Recolectar datos, indicadores y métricas que permitan Identificar las dinámicas (de los jugadores del sistema) que desembocan en un monopolio ... o ... que permitan localizar (aislar? predecir? ) un mercado emergente susceptible a monopolizacion? 
+    
+
+4. Diseña Prompts Iniciales:
+    
+
+- Usa ChatGPT para ayudarte a formular preguntas clave o generar ideas para el escenario.
+    
+Ejemplo de prompt: "Ayúdame a diseñar el marco matemático que permita crear el modelo adecuado para el análisis del estado actual de mercado y localize los monopolios actuales o las entidades que mas se acercan a dicho estatus . Incluye contexto, datos libremente obtenidos y objetivos de aprendizaje."
+    
+
+6. Crea el Escenario del ABP:
+    
+
+- Describe detalladamente el problema, asegurándote de incluir los datos, contexto y roles si aplica.
+    
+- Ejemplo de escenario: "Un equipo de expertos en economía y estrategia debe analizar las características de un mercado emergente para identificar oportunidades de inversión y consolidar un control exclusivo. Su tarea consiste en recolectar y analizar datos financieros y de comportamiento del consumidor mediante modelos matemáticos avanzados, con el objetivo de desarrollar una estrategia integral que permita la fusión de competidores y la creación de algún monopolio en caso de ser posible bajo las condiciones dadas del mercado."    
+
+8. Planifica las Tareas Específicas:
+    
+
+- Detalla las actividades necesarias para resolver el problema. (pendiente)
+    
+- Define cómo se usarán ChatGPT y otras herramientas (R, Mathematica, etc.). (pendiente)
+    
