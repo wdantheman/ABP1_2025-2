@@ -10,7 +10,7 @@ Usa ChatGPT para diseñar un problema educativo basado en una de las 10 tareas p
     
 - Contexto: En los mercados económicos (emergentes y persistentes) se observa un entorno que admite competencia, cooperación  y coexistencia entre las entidades que poseen, distribuyen, usan y administran recursos, donde la consolidación y el control del mercado son posibles objetivos estratégicos semejantes a aquellos de una especia intentando ejercer supremacía sobre un area dada, empujando ciertas especies laterales fuera de la region. Existen datos financieros y de comportamiento del consumidor disponibles, que requieren análisis detallado para localizar mercados no explotados aun y su susceptibilidad a practicas monopólicas.  
     
-- Objetivo: Recolectar datos, indicadores y métricas que permitan Identificar las dinámicas (de los jugadores del sistema) que desembocan en un monopolio ... o ... que permitan localizar (aislar? predecir? ) un mercado emergente susceptible a monopolizacion? 
+- Objetivo: Recolectar datos, indicadores y métricas que permitan Identificar las dinámicas (de los jugadores del sistema) que desembocan en un monopolio.
     
 
 4. Diseña Prompts Iniciales:
