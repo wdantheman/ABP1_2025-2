@@ -1,0 +1,288 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\geometry{margin=1in}
+
+% Datos de la tarea
+\title{\textbf{Seminario Matemáticas Aplicadas II\\Consecuencias estadísticas de las distribuciones de colas gordas en la ciencia y la toma de decisiones}}
+\author{Eliud Daniel Santillan Aparicio \\ Leonardo Vigueras \\ 415069696}
+\date{\today}
+%\date{} % Elimina la fecha
+
+
+\begin{document}
+
+\maketitle
+\section*{Instrucciones}
+
+\subsection*{Instrucciones para Diseñar y Resolver un ABP Usando ChatGPT}
+
+\textbf{Aprendizaje Basado en Problemas (ABP)}, aprovechando a ChatGPT como herramienta principal. Este ejercicio sigue tres fases: diseño del ABP, resolución del ABP usando el esquema de Polya y la entrega de los resultados.
+
+\section{Fase 1: Diseña un ABP Personalizado}
+
+Usa ChatGPT para diseñar un problema educativo basado en una de las 10 tareas propuestas. Sigue estos pasos:
+
+\begin{enumerate}
+    \item \textbf{Elige una Tarea:} Case study: \textit{Blitzscaling: Estrategias antifrágiles en la monopolización de mercados}
+    \item \textbf{Contexto y los Objetivos:}
+    \begin{itemize}
+        \item \textbf{Contexto:} En los mercados económicos (emergentes y persistentes) se observa un entorno que admite competencia, cooperación y coexistencia entre las entidades que poseen, distribuyen, usan y administran recursos, donde la consolidación y el control del mercado son posibles objetivos estratégicos semejantes a aquellos de una especie o entidad individual intentando ejercer supremacía sobre un área determinada, empujando ciertas especies fuera de la región, en nuestro caso de estudio, empujando competencia fuera del mercado. Existen datos financieros y de comportamiento del consumidor disponibles, que pueden dar luz sobre las condiciones y dinámicas que han terminado en algún monopolio.
+        \item \textbf{Objetivo:} Recolectar datos, indicadores y métricas que permitan identificar las dinámicas y condiciones de sistema que inducen monopolios en un mercado dado \dots{} y comparar si dichas estrategias coinciden con aquellas de una estrategia antifrágil.
+    \end{itemize}
+    \item \textbf{Diseña Prompts Iniciales:}
+    \begin{enumerate}
+        \item \textbf{Prompts para recolección de datos e indicadores}
+        \begin{itemize}
+            \item \textbf{``¿Cuáles son los indicadores financieros y de comportamiento del consumidor que históricamente han precedido la consolidación de un monopolio en mercados emergentes?''}
+            \item \textbf{``Dame una lista de métricas clave para evaluar concentración de mercado, uso y control de recursos, y desplazamiento de competidores.''}
+            \item \textbf{``¿Qué fuentes de datos abiertos o bases de datos confiables pueden usarse para estudiar dinámicas de monopolización en mercados específicos?''}
+            \item \textbf{``¿Cómo se puede usar el Índice Herfindahl-Hirschman (HHI) junto con métricas de comportamiento del consumidor para detectar tendencias hacia el monopolio?''}
+        \end{itemize}
+        \item \textbf{Prompts para análisis estratégico}
+        \begin{itemize}
+            \item \textbf{``Explícame cómo se relacionan las estrategias de crecimiento de empresas como Amazon, Google o Tencent con la expulsión de competencia y consolidación de mercado.''}
+            \item \textbf{``¿Qué tácticas comunes usan las empresas para forzar la salida de competencia del mercado, y cómo se reflejan en los datos financieros?''}
+            \item \textbf{``Haz un mapa conceptual que relacione cooperación, competencia y coexistencia entre actores del mercado, mostrando cómo pueden derivar en estructuras monopolísticas.''}
+            \item \textbf{``¿En qué se parecen las dinámicas de consolidación de mercado con estrategias biológicas de dominancia territorial?''}
+            \item \textbf{``Como se vería una estrategia Barbell aplicada en la dirección de una empresa start up?''}
+        \end{itemize}
+        \item \textbf{Prompts para relación con antifragilidad}
+        \begin{itemize}
+            \item \textbf{``¿Qué características hacen que una estrategia empresarial sea antifrágil según Taleb, y cómo se diferencian de las estrategias que llevan al monopolio?''}
+            \item \textbf{``¿Es posible que una estrategia antifrágil derive en un monopolio? ¿Qué condiciones lo permitirían?''}
+            \item \textbf{``Analiza si la búsqueda de control total del mercado (monopolio) puede ser compatible con una postura antifrágil o si entra en contradicción con ella.''}
+            \item \textbf{``Compara los efectos de shocks externos en un ecosistema de mercado competitivo vs uno dominado por un monopolio, desde la perspectiva de la antifragilidad.''}
+            \item \textbf{``Como se vería una estrategia Barbell aplicada en la dirección de una empresa start up?''}
+        \end{itemize}
+    \end{enumerate}
+    \item \textbf{Crea el Escenario del ABP:}
+    \begin{itemize}
+        \item Describe detalladamente el problema, asegurándote de incluir los datos, contexto y roles si aplica.
+        \item Un equipo interdisciplinario de investigadores ha sido convocado para estudiar \textbf{cómo ciertos mercados terminan consolidándose bajo estructuras monopólicas}. Su misión es \textbf{identificar las condiciones sistémicas y dinámicas estratégicas que permiten la emergencia y sostenimiento de monopolios}, especialmente en mercados donde originalmente existía una estructura competitiva o cooperativa.
+        \item El proyecto parte del reconocimiento de que los mercados no solo son campos de competencia, sino también \textbf{ecosistemas complejos} donde actores diversos (empresas, consumidores, reguladores, plataformas tecnológicas, etc.) \textbf{interactúan y coevolucionan}. En este entorno, las entidades que administran, distribuyen o poseen recursos pueden adoptar \textbf{estrategias de supremacía} para empujar fuera a la competencia, controlar flujos de valor y reconfigurar las reglas del juego a su favor.
+    \end{itemize}
+    \subsection*{Contexto del análisis}
+    \begin{itemize}
+        \item Mercados emergentes o en transformación tecnológica (e.g., fintech, energía renovable, plataformas digitales, IA, logística descentralizada).
+        \item Combinación de competencia, cooperación y coexistencia entre múltiples actores.
+        \item Disponibilidad de \textbf{datos financieros}, \textbf{indicadores de comportamiento del consumidor}, y métricas de \textbf{crecimiento orgánico vs inorgánico} (fusiones, adquisiciones, alianzas, etc.).
+        \item Interés por \textbf{detectar señales tempranas de monopolización}, tanto legales como encubiertas.
+    \end{itemize}
+    \subsection*{Datos disponibles}
+    \begin{itemize}
+        \item Estados financieros históricos (ingresos, costos, márgenes, inversión en I+D, etc.).
+        \item Datos de participación de mercado y concentración (Índice HHI, participación relativa, etc.).
+        \item Comportamiento de consumidores (fidelidad, retención, churn, adquisición por canal, etc.).
+        \item Historial de fusiones, adquisiciones, litigios y sanciones regulatorias.
+        \item Patrones de pricing dinámico, subsidios cruzados y control de infraestructura crítica.
+    \end{itemize}
+    \subsection*{Roles involucrados}
+    \begin{itemize}
+        \item \textbf{Economistas de sistemas}: identifican estructuras de incentivos y mecanismos de retroalimentación en el ecosistema.
+        \item \textbf{Analistas financieros}: extraen y correlacionan datos cuantitativos para detectar patrones de consolidación.
+        \item \textbf{Estrategas organizacionales}: reconstruyen las trayectorias estratégicas de las empresas dominantes.
+        \item \textbf{Expertos en comportamiento del consumidor}: modelan la influencia de preferencias, dependencia y redes.
+        \item \textbf{Estudiosos de sistemas antifrágiles}: comparan las estrategias exitosas con aquellas que emergen bajo condiciones de incertidumbre y disrupción.
+    \end{itemize}
+    \subsection*{Problema a resolver}
+    Diseñar un \textbf{modelo analítico y estratégico} que permita:
+    \begin{enumerate}
+        \item \textbf{Detectar dinámicas de monopolización} en un mercado dado, mediante el análisis de datos reales.
+        \item \textbf{Identificar las condiciones sistémicas} que favorecen o permiten esa consolidación (regulatorias, tecnológicas, culturales, financieras, etc.).
+        \item \textbf{Comparar las trayectorias y estrategias observadas} con los principios de la \textbf{antifragilidad}: es decir, distinguir si la dominancia surgió por robustez, adaptabilidad, absorción del caos o por asimetrías explotadas.
+        \item \textbf{Producir herramientas diagnósticas} para analizar otros mercados en términos similares (plantillas, indicadores, mapas estratégicos, etc.).
+    \end{enumerate}
+    \item \textbf{Planifica las Tareas Específicas:}
+    \subsubsection*{Subfase 1: Delimitación del mercado y recolección de datos}
+    \textbf{Objetivo:} Seleccionar el mercado a estudiar y recolectar datos relevantes.
+
+    \textbf{Tareas:}
+    \begin{enumerate}
+        \item \textbf{Definir el mercado objetivo} (sector, país, tamaño, tipo de actores).
+        \item \textbf{Identificar fuentes de datos abiertos o institucionales:}
+        \begin{itemize}
+            \item Datos financieros (p.ej. Yahoo Finance, SEC, Bloomberg, bancos centrales).
+            \item Datos de comportamiento (Google Trends, encuestas, reportes de consumo).
+        \end{itemize}
+        \item \textbf{Recolectar y limpiar los datos crudos.}
+    \end{enumerate}
+    \textbf{Herramientas:}
+    \begin{itemize}
+        \item \textbf{ChatGPT}: para generar queries, identificar fuentes de datos relevantes, crear scripts de scraping o limpieza.
+        \item \textbf{R / Python}: para descarga, limpieza y transformación de datasets.
+        \item \textbf{Obsidian}: para documentar fuentes, criterios de inclusión/exclusión y primeras observaciones.
+    \end{itemize}
+    \subsubsection*{Subfase 2: Análisis de concentración y dominancia}
+    \textbf{Objetivo:} Evaluar el nivel de concentración de mercado y posibles trayectorias hacia monopolios.
+
+    \textbf{Tareas:}
+    \begin{enumerate}
+        \item Calcular métricas como:
+        \begin{itemize}
+            \item Índice HHI.
+            \item Cuota de mercado (Top 3 / Top 5 firms).
+            \item Evolución de ingresos y participación.
+        \end{itemize}
+        \item Detectar eventos clave: fusiones, adquisiciones, expansión agresiva.
+        \item Analizar relación entre inversión en I+D, pricing, subsidios cruzados y exclusión competitiva.
+    \end{enumerate}
+    \textbf{Herramientas:}
+    \begin{itemize}
+        \item \textbf{R / Python}: para análisis estadístico y visualización.
+        \item \textbf{Mathematica}: para modelado simbólico y análisis teórico si se requieren ecuaciones dinámicas.
+        \item \textbf{ChatGPT}: para:
+        \begin{itemize}
+            \item Explicar las fórmulas e interpretaciones.
+            \item Redactar informes parciales.
+            \item Sugerir visualizaciones útiles.
+            \item Generar dashboards en Shiny o Plotly si es necesario.
+        \end{itemize}
+    \end{itemize}
+    \subsubsection*{Subfase 3: Modelado de dinámicas sistémicas}
+    \textbf{Objetivo:} Reconstruir las dinámicas que llevan a consolidación.
+
+    \textbf{Tareas:}
+    \begin{enumerate}
+        \item Diseñar un modelo causal o de sistemas (tipo \textbf{arquetipos sistémicos} o \textbf{diagrama de stock y flujo}).
+        \item Identificar \textbf{loops de retroalimentación}, cuellos de botella o puntos de apalancamiento.
+        \item Estudiar escenarios de intervención o resiliencia de los competidores.
+    \end{enumerate}
+    \textbf{Herramientas:}
+    \begin{itemize}
+        \item \textbf{Vensim / Insight Maker} o \textbf{Mathematica}: para diagramas de sistemas.
+        \item \textbf{ChatGPT}: para:
+        \begin{itemize}
+            \item Describir dinámicas complejas en lenguaje claro.
+            \item Traducir dinámicas en código.
+            \item Detectar arquetipos sistémicos comunes (e.g., ``Éxito al exitoso'', ``Refuerzo del dominante'').
+        \end{itemize}
+    \end{itemize}
+    \subsubsection*{Subfase 4: Comparación con principios antifrágiles}
+    \textbf{Objetivo:} Evaluar si las estrategias dominantes coinciden con características de antifragilidad.
+
+    \textbf{Tareas:}
+    \begin{enumerate}
+        \item Extraer patrones estratégicos: ¿cómo respondieron al caos, incertidumbre o disrupciones?
+        \item Comparar contra criterios antifrágiles:
+        \begin{itemize}
+            \item Opcionalidad.
+            \item Descentralización.
+            \item Beneficio del desorden.
+            \item Redundancia estratégica.
+        \end{itemize}
+        \item Identificar si la consolidación surgió de adaptabilidad o de eliminación sistemática de competencia.
+    \end{enumerate}
+    \textbf{Herramientas:}
+    \begin{itemize}
+        \item \textbf{Obsidian}: para documentar el análisis comparativo y construir una taxonomía de estrategias.
+        \item \textbf{ChatGPT}: para:
+        \begin{itemize}
+            \item Sugerir ejemplos históricos.
+            \item Traducir ideas del libro de Taleb a criterios observables.
+            \item Redactar mapas comparativos o marcos analíticos.
+        \end{itemize}
+    \end{itemize}
+    \subsubsection*{Subfase 5: Producción de entregables y herramientas reutilizables}
+    \textbf{Objetivo:} Documentar los hallazgos y construir herramientas aplicables a otros mercados.
+
+    \textbf{Tareas:}
+    \begin{enumerate}
+        \item Redactar informe final con visualizaciones, conclusiones y recomendaciones.
+        \item Crear una plantilla para replicar el análisis en otros mercados.
+        \item Diseñar una tabla comparativa de estrategias monopolísticas vs antifrágiles.
+    \end{enumerate}
+    \textbf{Herramientas:}
+    \begin{itemize}
+        \item \textbf{ChatGPT}: para:
+        \begin{itemize}
+            \item Redactar el informe con estilo académico o técnico.
+            \item Crear prompts reutilizables.
+            \item Sintetizar los hallazgos.
+        \end{itemize}
+        \item \textbf{Obsidian}: para organizar todo como un ``kit de análisis'' modular.
+        \item \textbf{RMarkdown / Quarto}: para informes reproducibles.
+    \end{itemize}
+\end{enumerate}
+
+
+
+
+\section*{Fase 2: Resuelve el ABP Usando el Esquema de Polya}
+
+Aplica los pasos del esquema de resolución de Polya para resolver el problema. Documenta cada etapa y utiliza ChatGPT como apoyo. El proceso debe estar documentado. 
+
+\subsubsection*{1. Comprender el Problema}
+
+\begin{itemize}
+    \item Describe claramente el problema.
+    \item Usa ChatGPT para identificar las preguntas clave y clarificar conceptos.
+    \item \textbf{Prompt sugerido:} "¿Qué debo considerar al analizar una distribución de colas gordas en este escenario?"
+\end{itemize}
+
+\subsubsection*{2. Trazar un Plan}
+
+\begin{itemize}
+    \item Diseña una estrategia para abordar el problema.
+    \item Usa ChatGPT para proponer herramientas y enfoques específicos.
+    \item \textbf{Prompt sugerido:} "Proporciona una estrategia paso a paso para analizar datos meteorológicos utilizando la teoría de valores extremos."
+\end{itemize}
+
+\subsubsection*{3. Ejecutar el Plan}
+
+\begin{itemize}
+    \item Realiza las actividades propuestas, utilizando ChatGPT para resolver dudas o verificar resultados.
+    \item \textbf{Prompt sugerido:} "¿Puedes ayudarme a interpretar estos datos simulados y verificar si muestran un comportamiento de colas gordas?"
+\end{itemize}
+
+\subsubsection*{4. Revisar el Resultado}
+
+\begin{itemize}
+    \item Evalúa la solución obtenida y asegúrate de que responde al problema planteado.
+    \item \textbf{Prompt sugerido:} "¿Cómo podría mejorar mis conclusiones sobre este análisis?"
+\end{itemize}
+
+\section*{Fase 3: Entregables}
+
+Prepara los siguientes entregables documentando todo el proceso:
+
+\subsubsection*{1. Diseño de Prompts y Prompts Usados}
+
+\begin{itemize}
+    \item Proporciona una lista detallada de los prompts diseñados y utilizados durante el proceso.
+    \item Incluye una breve explicación de cómo cada prompt ayudó a avanzar en el ABP.
+\end{itemize}
+
+\subsubsection*{2. Escenario del ABP}
+
+\begin{itemize}
+    \item Presenta el contexto, el problema detallado y los objetivos específicos del escenario.
+\end{itemize}
+
+\subsubsection*{3. Chats Utilizados}
+
+\begin{itemize}
+    \item Copia las interacciones más relevantes con ChatGPT durante el diseño y resolución del problema.
+    \item Resalta cómo las respuestas de ChatGPT influyeron en el proceso.
+\end{itemize}
+
+\subsubsection*{4. Documento de Resolución del ABP}
+
+Sigue el esquema de Polya para estructurar este documento:
+
+\begin{itemize}
+    \item Comprensión del problema.
+    \item Plan diseñado.
+    \item Ejecución del plan (incluye resultados obtenidos).
+    \item Revisión y reflexiones finales.
+\end{itemize}
+
+
+
+
+\end{document}
