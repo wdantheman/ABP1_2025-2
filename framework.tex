@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{url}
+\geometry{margin=1in}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+
+
+% Datos de la tarea
+\title{\textbf{Seminario Matemáticas Aplicadas II\\Propuesta de Framework.}}
+\author{Eliud Daniel Santillan Aparicio \\ Leonardo Vigueras \\ 415069696}
+\date{\today}
+%\date{} % Elimina la fecha
+
+
+\begin{document}
+
+\maketitle
+
+
+\section*{1. Definiciones Preliminares}
+\begin{definition}[Sistema Económico Dinámico]
+Un \emph{sistema económico dinámico} se describe mediante el quíntuplo
+\[
+\mathcal{E} = (S, \Theta, F, P, C),
+\]
+donde:
+\begin{itemize}
+  \item $S$ es el espacio de estados, cada $s \in S$ codifica la asignación de cantidades producidas por cada agente y los precios de mercado.  
+  \item $\Theta \subseteq \mathbb{R}^d$ es el espacio de parámetros exógenos (capacidades, costes, demanda potencial, grado de información, etc.).  
+  \item $F : S \times \Theta \to S$ es la dinámica discreta, $s_{t+1} = F(s_t; \theta)$, que modela la evolución de la oferta y demanda en cada iteración $t$.  
+  \item $P = \{1,2,\dots,m\}$ es el conjunto de proveedores (agentes productores).  
+  \item $C : S \to [0,1]$ es un índice de concentración de mercado (por ejemplo, el Índice de Herfindahl–Hirschman, $HHI$ normalizado).  
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Parámetros de Información]
+Sea $I : S \to \mathbb{R}_{\ge0}$ una función que mide la \emph{cantidad de información disponible} para los agentes (p.\,ej., entropía de la distribución de precios o accesibilidad de datos de mercado).
+\end{definition}
+
+\section*{2. Objeto Monopolio}
+\begin{definition}[Objeto Monopolio]
+Dado un estado $s \in S$ y un umbral $\alpha \in (0.5,1]$, definimos el \emph{objeto monopolio} como
+\[
+M(s,\alpha) = \begin{cases}
+1, & \text{si } C(s) \ge \alpha, \\ 0, & \text{en caso contrario.}
+\end{cases}
+\]
+Es decir, $M=1$ indica que en el estado $s$ existe un monopolio con grado mínimo de concentración $\alpha$.  
+\end{definition}
+
+\section*{3. Relaciones y Condiciones Sistémicas}
+\begin{proposition}[Emergencia de Monopolio]
+Sea $s_0 \in S$ un estado inicial y $\theta\in \Theta$ un vector de parámetros. Existe un monopolio en $n$ iteraciones si:
+\[
+\exists\, n \in \mathbb{N} \quad:\quad C\bigl(F^n(s_0;\theta)\bigr) \ge \alpha.
+\]
+Denotaremos esta propiedad por $\mathcal{M}(s_0,\theta,\alpha,n)$.  
+\end{proposition}
+
+\section*{4. Función de Clasificación}
+Definimos una función de clasificación binaria
+\[
+D : \Theta \to \{0,1\},
+\]
+tal que para cada parámetro $\theta$,
+\[
+D(\theta) = \begin{cases}
+1, & \text{si } \exists\, n \le N_{\max} : C\bigl(F^n(s_0;\theta)\bigr) \ge \alpha, \\ 0, & \text{en otro caso.}
+\end{cases}
+\]
+Esta función servirá como etiqueta para el entrenamiento de un modelo supervisado.  
+
+\section*{5. Esquema de Entrenamiento}
+Para entrenar un modelo $\widehat{D}_\varphi$ con parámetros internos $\varphi$, se procede:
+\begin{enumerate}
+  \item Generar un conjunto de muestras $\{(\theta_i, y_i)\}_{i=1}^N$, donde $y_i = D(\theta_i)$.  
+  \item Definir la función de pérdida binaria, p.\,ej.:
+  \[
+  \mathcal{L}(\varphi) = -\frac{1}{N} \sum_{i=1}^N \bigl[y_i \log \widehat{D}_\varphi(\theta_i) + (1-y_i)\log\bigl(1-\widehat{D}_\varphi(\theta_i)\bigr)\bigr].
+  \]
+  \item Optimizar $\varphi^* = \arg\min_\varphi \mathcal{L}(\varphi)$ mediante descenso de gradiente u otro algoritmo de optimización.  
+\end{enumerate}
+
+\section*{6. Interpretación Intuitiva}
+En este framework, decimos que para el sistema económico $\mathcal{E}$, con parámetros $\theta$, tras $n$ iteraciones la dinámica interna genera un estado $s_n$ en el cual emerge el \emph{Objeto Monopolio} ($M=1$) al superar el índice de concentración $\alpha$.  
+
+
+
+
+\end{document}
